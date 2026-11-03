@@ -5,9 +5,9 @@
   "type": "module",
   "scripts": {
     "dev": "node server.mjs",
-    "build": "vite build && mkdir -p out build && cp -r dist/* out/ 2>/dev/null && cp -r dist/* build/ 2>/dev/null || true",
-    "start": "next start -p 3000",
-    "preview": "next start -p 3000",
+    "build": "next build",
+    "start": "node server.js",
+    "preview": "node server.js",
     "clean": "rm -rf .next dist",
     "test": "vitest run tests/",
     "lint": "tsc --noEmit"
