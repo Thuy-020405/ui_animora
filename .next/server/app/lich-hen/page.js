@@ -1,0 +1,13 @@
+var R=require("../../chunks/ssr/[turbopack]_runtime.js")("server/app/lich-hen/page.js")
+R.c("server/chunks/ssr/node_modules_next_dist_esm_build_templates_app-page_06g3_39ei3s_i.js")
+R.c("server/chunks/ssr/[root-of-the-server]__0pd0hpoamyn7v._.js")
+R.c("server/chunks/ssr/node_modules_next_dist_0-amwqbrge23p._.js")
+R.c("server/chunks/ssr/[root-of-the-server]__0yunq9n4j02bg._.js")
+R.c("server/chunks/ssr/[root-of-the-server]__07glkk8ripyax._.js")
+R.c("server/chunks/ssr/node_modules_next_dist_client_components_0wpq8j32_ibz4._.js")
+R.c("server/chunks/ssr/node_modules_next_dist_client_components_builtin_forbidden_0symwr9mbf-fh.js")
+R.c("server/chunks/ssr/node_modules_next_dist_client_components_builtin_unauthorized_0l_sp0xky89qu.js")
+R.c("server/chunks/ssr/node_modules_next_dist_client_components_builtin_global-error_0q-w892nagajq.js")
+R.c("server/chunks/ssr/_next-internal_server_app_lich-hen_page_actions_18h-dknh34s3_.js")
+R.m(14770)
+module.exports=R.m(14770).exports

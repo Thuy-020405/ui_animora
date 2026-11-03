@@ -35,14 +35,17 @@ export const Footer: React.FC<FooterProps> = ({ lang, darkMode, onNavigate, onSh
 
   // Background paw bubbles toggle state
   const [bubblesEnabled, setBubblesEnabled] = useState<boolean>(() => {
-    const saved = localStorage.getItem('animora_paw_bubbles_enabled');
-    if (saved !== null) {
-      return saved === 'true';
+    if (typeof window === 'undefined') return true;
+    try {
+      const saved = localStorage.getItem('animora_paw_bubbles_enabled');
+      if (saved !== null) {
+        return saved === 'true';
+      }
+      const prefersReduced = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+      return !prefersReduced;
+    } catch {
+      return true;
     }
-    const prefersReduced =
-      typeof window !== 'undefined' &&
-      window.matchMedia('(prefers-reduced-motion: reduce)').matches;
-    return !prefersReduced;
   });
 
   const handleToggleBubbles = () => {

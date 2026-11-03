@@ -1,3 +1,5 @@
+'use client';
+
 import { useState, useEffect } from 'react';
 import { Navbar } from './components/Navbar';
 import { Hero } from './components/Hero';
@@ -101,6 +103,7 @@ const SECONDARY_DEMO_USER: UserAccount = {
 export default function App() {
   // Active page routing ('home' | 'about' | 'services' | 'booking' | 'my-bookings' | 'adopt' | 'shop' | 'cart' | 'checkout' | 'pet-profiles')
   const [activePage, setActivePage] = useState<PageId>(() => {
+    if (typeof window === 'undefined') return 'home';
     const path = window.location.pathname;
     if (path.startsWith('/gio-hang')) {
       return 'cart';
@@ -144,11 +147,15 @@ export default function App() {
   const [returnPageAfterAuth, setReturnPageAfterAuth] = useState<PageId | null>(null);
 
   const [bookingUrlState, setBookingUrlState] = useState(() =>
-    parseServiceBookingUrl(window.location.pathname, window.location.search)
+    typeof window !== 'undefined'
+      ? parseServiceBookingUrl(window.location.pathname, window.location.search)
+      : { preselectedServiceSlug: undefined, isSuccessRoute: false }
   );
 
   const [myBookingsUrlState, setMyBookingsUrlState] = useState(() =>
-    parseMyBookingsUrl(window.location.pathname, window.location.search)
+    typeof window !== 'undefined'
+      ? parseMyBookingsUrl(window.location.pathname, window.location.search)
+      : { detailCode: undefined, queryCode: undefined }
   );
 
   const [scrollSpyPage, setScrollSpyPage] = useState<PageId>('home');
@@ -337,6 +344,7 @@ export default function App() {
 
   // 1. Bilingual language state (default VI, switchable to EN)
   const [lang, setLang] = useState<Language>(() => {
+    if (typeof window === 'undefined') return 'vi';
     try {
       const saved = localStorage.getItem('animora_lang');
       return saved === 'en' ? 'en' : 'vi';
@@ -359,6 +367,7 @@ export default function App() {
 
   // 2. Light / Dark mode state (saves in localStorage, default follows prefers-color-scheme)
   const [darkMode, setDarkMode] = useState<boolean>(() => {
+    if (typeof window === 'undefined') return false;
     try {
       const saved = localStorage.getItem('animora_theme');
       if (saved !== null) {
@@ -367,7 +376,7 @@ export default function App() {
     } catch {
       // ignore
     }
-    return window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
+    return typeof window !== 'undefined' && window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
   });
 
   useEffect(() => {

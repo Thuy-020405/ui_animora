@@ -839,7 +839,7 @@ export const AuthPage: React.FC<AuthPageProps> = ({
                 className="relative flex items-center justify-center w-11 h-11 rounded-2xl shadow-sm group-hover:scale-105 transition-transform overflow-hidden border border-[var(--border)]"
                 style={{ backgroundColor: 'var(--primary)' }}
               >
-                <img src={animoraLogo} alt="Animora" className="w-full h-full object-cover !filter-none" />
+                <img src={typeof animoraLogo === 'string' ? animoraLogo : (animoraLogo as any)?.src} alt="Animora" className="w-full h-full object-cover !filter-none" />
               </div>
               <span className="font-heading text-[28px] font-extrabold tracking-tight text-[var(--primary)]">
                 Animora.

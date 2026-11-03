@@ -1,0 +1,19 @@
+{
+  "devFiles": [],
+  "ampDevFiles": [],
+  "polyfillFiles": [],
+  "lowPriorityFiles": [],
+  "rootMainFiles": [],
+  "pages": {
+    "/BookingPage": [
+      "static/chunks/0dpdn9m2hb1fj.js",
+      "static/chunks/turbopack-2u1d16houkiyo.js"
+    ]
+  },
+  "ampFirstPages": [],
+  "rootMainFilesTree": {},
+  "pagesChunkGroupBootstrapParams": {
+    "/BookingPage": {"otherChunks":["static/chunks/0dpdn9m2hb1fj.js"],"runtimeModuleIds":[10783,25820]}
+  },
+  "chunkLoadingGlobal": "TURBOPACK"
+}
