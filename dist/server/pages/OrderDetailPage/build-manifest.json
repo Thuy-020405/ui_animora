@@ -1,0 +1,19 @@
+{
+  "devFiles": [],
+  "ampDevFiles": [],
+  "polyfillFiles": [],
+  "lowPriorityFiles": [],
+  "rootMainFiles": [],
+  "pages": {
+    "/OrderDetailPage": [
+      "static/chunks/2lcm650j45qqx.js",
+      "static/chunks/turbopack-2u1d16houkiyo.js"
+    ]
+  },
+  "ampFirstPages": [],
+  "rootMainFilesTree": {},
+  "pagesChunkGroupBootstrapParams": {
+    "/OrderDetailPage": {"otherChunks":["static/chunks/2lcm650j45qqx.js"],"runtimeModuleIds":[10783,25035]}
+  },
+  "chunkLoadingGlobal": "TURBOPACK"
+}

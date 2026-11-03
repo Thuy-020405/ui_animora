@@ -1,0 +1,13 @@
+var R=require("../../chunks/ssr/[turbopack]_runtime.js")("server/app/ve-chung-toi/page.js")
+R.c("server/chunks/ssr/node_modules_next_dist_esm_build_templates_app-page_1y_7dfw7_vfe9.js")
+R.c("server/chunks/ssr/[root-of-the-server]__1ejfd5emnca9k._.js")
+R.c("server/chunks/ssr/node_modules_next_dist_0-amwqbrge23p._.js")
+R.c("server/chunks/ssr/[root-of-the-server]__0yunq9n4j02bg._.js")
+R.c("server/chunks/ssr/[root-of-the-server]__07glkk8ripyax._.js")
+R.c("server/chunks/ssr/node_modules_next_dist_client_components_0wpq8j32_ibz4._.js")
+R.c("server/chunks/ssr/node_modules_next_dist_client_components_builtin_forbidden_0symwr9mbf-fh.js")
+R.c("server/chunks/ssr/node_modules_next_dist_client_components_builtin_unauthorized_0l_sp0xky89qu.js")
+R.c("server/chunks/ssr/src_app_global-error_tsx_009xrx8nk64k0._.js")
+R.c("server/chunks/ssr/_next-internal_server_app_ve-chung-toi_page_actions_1su-f7rva0i5u.js")
+R.m(88922)
+module.exports=R.m(88922).exports

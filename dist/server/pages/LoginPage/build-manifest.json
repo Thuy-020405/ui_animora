@@ -1,0 +1,19 @@
+{
+  "devFiles": [],
+  "ampDevFiles": [],
+  "polyfillFiles": [],
+  "lowPriorityFiles": [],
+  "rootMainFiles": [],
+  "pages": {
+    "/LoginPage": [
+      "static/chunks/0_iv5-qaemqbp.js",
+      "static/chunks/turbopack-2u1d16houkiyo.js"
+    ]
+  },
+  "ampFirstPages": [],
+  "rootMainFilesTree": {},
+  "pagesChunkGroupBootstrapParams": {
+    "/LoginPage": {"otherChunks":["static/chunks/0_iv5-qaemqbp.js"],"runtimeModuleIds":[10783,22928]}
+  },
+  "chunkLoadingGlobal": "TURBOPACK"
+}

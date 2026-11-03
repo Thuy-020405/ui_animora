@@ -1,0 +1,1 @@
+(globalThis.TURBOPACK||(globalThis.TURBOPACK=[])).push(["object"==typeof document?document.currentScript:void 0,63462,t=>{t.q("/_next/static/media/animora_pet_logo_1793179870995.1t9avp0h4j-d0.jpg")}]);

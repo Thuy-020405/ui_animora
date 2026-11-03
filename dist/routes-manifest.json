@@ -1,0 +1,225 @@
+{
+  "version": 3,
+  "pages404": true,
+  "appType": "hybrid",
+  "caseSensitive": false,
+  "basePath": "",
+  "redirects": [
+    {
+      "source": "/:path+/",
+      "destination": "/:path+",
+      "internal": true,
+      "priority": true,
+      "statusCode": 308,
+      "regex": "^(?:/((?:[^/]+?)(?:/(?:[^/]+?))*))/$"
+    }
+  ],
+  "headers": [],
+  "onMatchHeaders": [],
+  "rewrites": {
+    "beforeFiles": [],
+    "afterFiles": [],
+    "fallback": []
+  },
+  "dynamicRoutes": [],
+  "staticRoutes": [
+    {
+      "page": "/",
+      "regex": "^/(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/(?:/)?$"
+    },
+    {
+      "page": "/_not-found",
+      "regex": "^/_not\\-found(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/_not\\-found(?:/)?$"
+    },
+    {
+      "page": "/AboutPage",
+      "regex": "^/AboutPage(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/AboutPage(?:/)?$"
+    },
+    {
+      "page": "/AdoptionFormPage",
+      "regex": "^/AdoptionFormPage(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/AdoptionFormPage(?:/)?$"
+    },
+    {
+      "page": "/AdoptionPage",
+      "regex": "^/AdoptionPage(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/AdoptionPage(?:/)?$"
+    },
+    {
+      "page": "/BookingPage",
+      "regex": "^/BookingPage(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/BookingPage(?:/)?$"
+    },
+    {
+      "page": "/BookingsPage",
+      "regex": "^/BookingsPage(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/BookingsPage(?:/)?$"
+    },
+    {
+      "page": "/CartPage",
+      "regex": "^/CartPage(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/CartPage(?:/)?$"
+    },
+    {
+      "page": "/CheckoutPage",
+      "regex": "^/CheckoutPage(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/CheckoutPage(?:/)?$"
+    },
+    {
+      "page": "/cua-hang",
+      "regex": "^/cua\\-hang(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/cua\\-hang(?:/)?$"
+    },
+    {
+      "page": "/dang-nhap",
+      "regex": "^/dang\\-nhap(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/dang\\-nhap(?:/)?$"
+    },
+    {
+      "page": "/dat-lich",
+      "regex": "^/dat\\-lich(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/dat\\-lich(?:/)?$"
+    },
+    {
+      "page": "/dich-vu",
+      "regex": "^/dich\\-vu(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/dich\\-vu(?:/)?$"
+    },
+    {
+      "page": "/gio-hang",
+      "regex": "^/gio\\-hang(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/gio\\-hang(?:/)?$"
+    },
+    {
+      "page": "/ho-so-thu-cung",
+      "regex": "^/ho\\-so\\-thu\\-cung(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/ho\\-so\\-thu\\-cung(?:/)?$"
+    },
+    {
+      "page": "/HomePage",
+      "regex": "^/HomePage(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/HomePage(?:/)?$"
+    },
+    {
+      "page": "/lich-hen",
+      "regex": "^/lich\\-hen(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/lich\\-hen(?:/)?$"
+    },
+    {
+      "page": "/LoginPage",
+      "regex": "^/LoginPage(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/LoginPage(?:/)?$"
+    },
+    {
+      "page": "/nhan-nuoi",
+      "regex": "^/nhan\\-nuoi(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/nhan\\-nuoi(?:/)?$"
+    },
+    {
+      "page": "/NotFoundPage",
+      "regex": "^/NotFoundPage(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/NotFoundPage(?:/)?$"
+    },
+    {
+      "page": "/OrderDetailPage",
+      "regex": "^/OrderDetailPage(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/OrderDetailPage(?:/)?$"
+    },
+    {
+      "page": "/OrdersPage",
+      "regex": "^/OrdersPage(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/OrdersPage(?:/)?$"
+    },
+    {
+      "page": "/PetDetailPage",
+      "regex": "^/PetDetailPage(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/PetDetailPage(?:/)?$"
+    },
+    {
+      "page": "/PetProfilesPage",
+      "regex": "^/PetProfilesPage(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/PetProfilesPage(?:/)?$"
+    },
+    {
+      "page": "/ProductDetailPage",
+      "regex": "^/ProductDetailPage(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/ProductDetailPage(?:/)?$"
+    },
+    {
+      "page": "/ServiceDetailPage",
+      "regex": "^/ServiceDetailPage(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/ServiceDetailPage(?:/)?$"
+    },
+    {
+      "page": "/ServicesPage",
+      "regex": "^/ServicesPage(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/ServicesPage(?:/)?$"
+    },
+    {
+      "page": "/ShopPage",
+      "regex": "^/ShopPage(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/ShopPage(?:/)?$"
+    },
+    {
+      "page": "/thanh-toan",
+      "regex": "^/thanh\\-toan(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/thanh\\-toan(?:/)?$"
+    },
+    {
+      "page": "/ve-chung-toi",
+      "regex": "^/ve\\-chung\\-toi(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/ve\\-chung\\-toi(?:/)?$"
+    }
+  ],
+  "dataRoutes": [],
+  "rsc": {
+    "header": "rsc",
+    "varyHeader": "rsc, next-router-state-tree, next-router-prefetch, next-router-segment-prefetch",
+    "prefetchHeader": "next-router-prefetch",
+    "didPostponeHeader": "x-nextjs-postponed",
+    "contentTypeHeader": "text/x-component",
+    "suffix": ".rsc",
+    "prefetchSegmentHeader": "next-router-segment-prefetch",
+    "prefetchSegmentSuffix": ".segment.rsc",
+    "prefetchSegmentDirSuffix": ".segments",
+    "clientParamParsing": false,
+    "dynamicRSCPrerender": false
+  },
+  "rewriteHeaders": {
+    "pathHeader": "x-nextjs-rewritten-path",
+    "queryHeader": "x-nextjs-rewritten-query"
+  }
+}
