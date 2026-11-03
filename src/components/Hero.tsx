@@ -157,8 +157,17 @@ export const Hero: React.FC<HeroProps> = ({ lang, darkMode = false, onOpenConsul
             </button>
           </div>
 
-          {/* Unboxed Right-Aligned Social Proof */}
+          {/* Unboxed Right-Aligned Social Proof (5 Stars on top, text below) */}
           <div className="w-full flex flex-col items-start lg:items-end text-left lg:text-right pt-2 space-y-2">
+            <div className="flex items-center gap-2">
+              {[...Array(5)].map((_, i) => (
+                <Star
+                  key={i}
+                  className="w-5 h-5 fill-current"
+                  style={{ color: 'var(--primary)' }}
+                />
+              ))}
+            </div>
             <p
               className="text-sm sm:text-base font-normal"
               style={{ color: 'var(--text-muted)' }}
