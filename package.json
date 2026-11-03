@@ -4,11 +4,11 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
-    "dev": "node server.mjs",
-    "build": "next build",
+    "dev": "vite",
+    "build": "vite build && mkdir -p out build && cp -r dist/* out/ 2>/dev/null && cp -r dist/* build/ 2>/dev/null || true",
     "start": "node server.js",
-    "preview": "node server.js",
-    "clean": "rm -rf .next dist",
+    "preview": "vite preview",
+    "clean": "rm -rf dist build out .next",
     "test": "vitest run tests/",
     "lint": "tsc --noEmit"
   },

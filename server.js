@@ -1,25 +1,20 @@
 import express from 'express';
-import next from 'next';
-import { parse } from 'node:url';
+import path from 'node:path';
+import { fileURLToPath } from 'node:url';
 
-const dev = process.env.NODE_ENV !== 'production';
-const hostname = '0.0.0.0';
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = path.dirname(__filename);
+
+const app = express();
 const port = parseInt(process.env.PORT || '3000', 10);
+const hostname = '0.0.0.0';
 
-const app = next({ dev, hostname, port });
-const handle = app.getRequestHandler();
+app.use(express.static(path.join(__dirname, 'dist')));
 
-app.prepare().then(() => {
-  const expressApp = express();
+app.get('*', (req, res) => {
+  res.sendFile(path.join(__dirname, 'dist', 'index.html'));
+});
 
-  // Next.js request handler
-  expressApp.all(/.*/, (req, res) => {
-    const parsedUrl = parse(req.url, true);
-    handle(req, res, parsedUrl);
-  });
-
-  expressApp.listen(port, hostname, (err) => {
-    if (err) throw err;
-    console.log(`> Animora production server ready on http://${hostname}:${port}`);
-  });
+app.listen(port, hostname, () => {
+  console.log(`Server listening on http://${hostname}:${port}`);
 });
