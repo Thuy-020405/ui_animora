@@ -408,13 +408,13 @@ export const PawBubbleLayer: React.FC<PawBubbleLayerProps> = ({
       role="presentation"
       className={
         inFooter
-          ? 'absolute inset-0 pointer-events-none overflow-hidden -z-1 transition-opacity duration-300'
-          : 'fixed inset-0 pointer-events-none overflow-hidden -z-1 transition-opacity duration-300'
+          ? 'absolute inset-0 pointer-events-none overflow-hidden z-[1] transition-opacity duration-300'
+          : 'fixed inset-0 pointer-events-none overflow-hidden z-[1] transition-opacity duration-300'
       }
       style={{
         width: inFooter ? '100%' : '100vw',
         height: inFooter ? '100%' : '100vh',
-        opacity: reducedOpacity ? 0.3 : 0.6,
+        opacity: reducedOpacity ? 0.45 : 0.85,
         ...(reducedOpacity
           ? {
               // Keep bubbles strictly in left/right viewport margins, out of header, tabs, and cards
