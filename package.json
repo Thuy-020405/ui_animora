@@ -5,7 +5,7 @@
   "type": "module",
   "scripts": {
     "dev": "node server.mjs",
-    "build": "next build && mkdir -p dist && cp -r .next/* dist/",
+    "build": "next build",
     "start": "node server.js",
     "preview": "node server.js",
     "clean": "rm -rf .next dist",
