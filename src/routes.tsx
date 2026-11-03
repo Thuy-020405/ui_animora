@@ -5,24 +5,24 @@ import { AuthLayout } from '@/layouts/AuthLayout';
 import { ProtectedRoute } from '@/guards/ProtectedRoute';
 import { LoadingPage } from '@/components/common/feedback/LoadingPage';
 
-const HomePage = lazy(() => import('@/pages/HomePage'));
-const AboutPage = lazy(() => import('@/pages/AboutPage'));
-const ServicesPage = lazy(() => import('@/pages/ServicesPage'));
-const ServiceDetailPage = lazy(() => import('@/pages/ServiceDetailPage'));
-const AdoptionPage = lazy(() => import('@/pages/AdoptionPage'));
-const PetDetailPage = lazy(() => import('@/pages/PetDetailPage'));
-const AdoptionFormPage = lazy(() => import('@/pages/AdoptionFormPage'));
-const ShopPage = lazy(() => import('@/pages/ShopPage'));
-const ProductDetailPage = lazy(() => import('@/pages/ProductDetailPage'));
-const CartPage = lazy(() => import('@/pages/CartPage'));
-const CheckoutPage = lazy(() => import('@/pages/CheckoutPage'));
-const OrdersPage = lazy(() => import('@/pages/OrdersPage'));
-const OrderDetailPage = lazy(() => import('@/pages/OrderDetailPage'));
-const BookingPage = lazy(() => import('@/pages/BookingPage'));
-const BookingsPage = lazy(() => import('@/pages/BookingsPage'));
-const PetProfilesPage = lazy(() => import('@/pages/PetProfilesPage'));
-const LoginPage = lazy(() => import('@/pages/LoginPage'));
-const NotFoundPage = lazy(() => import('@/pages/NotFoundPage'));
+const HomePage = lazy(() => import('@/views/HomePage'));
+const AboutPage = lazy(() => import('@/views/AboutPage'));
+const ServicesPage = lazy(() => import('@/views/ServicesPage'));
+const ServiceDetailPage = lazy(() => import('@/views/ServiceDetailPage'));
+const AdoptionPage = lazy(() => import('@/views/AdoptionPage'));
+const PetDetailPage = lazy(() => import('@/views/PetDetailPage'));
+const AdoptionFormPage = lazy(() => import('@/views/AdoptionFormPage'));
+const ShopPage = lazy(() => import('@/views/ShopPage'));
+const ProductDetailPage = lazy(() => import('@/views/ProductDetailPage'));
+const CartPage = lazy(() => import('@/views/CartPage'));
+const CheckoutPage = lazy(() => import('@/views/CheckoutPage'));
+const OrdersPage = lazy(() => import('@/views/OrdersPage'));
+const OrderDetailPage = lazy(() => import('@/views/OrderDetailPage'));
+const BookingPage = lazy(() => import('@/views/BookingPage'));
+const BookingsPage = lazy(() => import('@/views/BookingsPage'));
+const PetProfilesPage = lazy(() => import('@/views/PetProfilesPage'));
+const LoginPage = lazy(() => import('@/views/LoginPage'));
+const NotFoundPage = lazy(() => import('@/views/NotFoundPage'));
 
 const withSuspense = (Component: React.ComponentType) => (
   <Suspense fallback={<LoadingPage />}>

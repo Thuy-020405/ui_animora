@@ -5,7 +5,7 @@
   "type": "module",
   "scripts": {
     "dev": "node server.mjs",
-    "build": "next build && mkdir -p out build && cp -r dist/* out/ 2>/dev/null && cp -r dist/* build/ 2>/dev/null || true",
+    "build": "vite build && mkdir -p out build && cp -r dist/* out/ 2>/dev/null && cp -r dist/* build/ 2>/dev/null || true",
     "start": "next start -p 3000",
     "preview": "next start -p 3000",
     "clean": "rm -rf .next dist",
