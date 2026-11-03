@@ -2,12 +2,8 @@
 node_modules
 .pnpm-store
 
-# Next.js & Build outputs
+# Next.js build cache
 .next/
-dist/
-out/
-build/
-*.tsbuildinfo
 
 # Environment variables
 .env
