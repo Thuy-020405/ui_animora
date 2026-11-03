@@ -1,0 +1,186 @@
+ANIMORA v1.1 - DANH SACH 135 USE CASE
+64 UC Tang 1 | 33 UC Tang 2 | 38 UC Tang 3
+
+CHU GIAI ACTOR
+KH = Khach hang
+CV = Chuyen vien
+BS = Bac si thu y
+AD = Admin (gom nhan vien kho, CSKH)
+SUP = Supplier
+TCH = Tram cuu ho
+HT = He thong
+
+CHINH SACH HUY / DOI LICH
+- Bao truoc >= 24 gio: khong phi, tru khi dich vu co chinh sach rieng.
+- Tu 3 den <24 gio: ap dung chinh sach huy duoc cau hinh theo dich vu.
+- Duoi 3 gio: tinh 50% phi dich vu.
+- Chuyen vien huy/tu choi lich: hoan 100% hoac goi y chuyen vien khac theo chinh sach.
+
+I. TAI KHOAN VA HO SO
+ACC-01 | Dang ky tai khoan | KH | 1
+ACC-02 | Dang nhap | Tat ca | 1
+ACC-03 | Dang xuat | Tat ca | 1
+ACC-04 | Quan ly thong tin ca nhan | Tat ca | 1
+ACC-05 | Quan ly dia chi giao hang | KH | 1
+ACC-06 | Doi mat khau | Tat ca | 1
+ACC-07 | Quen / dat lai mat khau | Tat ca | 1
+ACC-08 | Quan ly vai tro va tai khoan nhan su | AD | 1
+ACC-09 | Khoa / mo khoa tai khoan | AD | 2
+PET-01 | Them ho so thu cung | KH | 1
+PET-02 | Cap nhat ho so thu cung | KH | 1
+PET-03 | Xem ho so thu cung | KH | 1
+PET-04 | Xoa ho so thu cung | KH | 2
+PET-05 | Quan ly thong tin suc khoe | KH | 1
+PET-06 | Quan ly lich su cham soc va nhac lich | KH, HT | 2
+PET-07 | Xem lich su benh ly va don thuoc | KH | 1
+
+II. DICH VU, CHUYEN VIEN, DAT LICH
+SVC-01 | Quan ly danh muc dich vu (gia, thoi luong, nhom, cho phep tra sau, chinh sach huy) | AD | 1
+SVC-02 | Gan dich vu cho chuyen vien | AD | 1
+EXP-01 | Tao ho so chuyen vien (chung chi, chuyen mon, luong cung) | AD, CV | 1
+EXP-02 | Duyet ho so va phan loai bac si thu y | AD | 1
+EXP-03 | Quan ly lich lam viec / ngay nghi | CV | 1
+EXP-04 | Tim kiem va loc chuyen vien | KH | 1
+EXP-05 | Xem ho so chuyen vien | KH | 1
+BKG-01 | Dat lich dich vu (tra truoc / tra sau, dong y chinh sach huy) | KH | 1
+BKG-02 | Xem chi tiet lich hen | KH, CV | 1
+BKG-03 | Huy lich hen theo chinh sach huy | KH | 1
+BKG-04 | Doi lich hen | KH | 2
+BKG-05 | Xem danh sach lich hen cua chuyen vien | CV | 1
+BKG-06 | Xac nhan lich hen | CV | 1
+BKG-07 | Tu choi lich hen (hoan 100%, goi y chuyen vien khac) | CV | 1
+BKG-08 | Cap nhat trang thai (No-show, den tre qua 15 phut) | CV | 1
+BKG-09 | Hoan thanh dich vu | CV | 1
+BKG-10 | Xem lich su lich hen | KH, CV | 2
+
+III. THANH TOAN DICH VU VA DANH GIA
+SPAY-01 | Xem phi dich vu | KH | 1
+SPAY-02 | Thanh toan dich vu (tra truoc hoac tra sau) | KH | 1
+SPAY-03 | Kiem tra trang thai thanh toan | KH | 2
+SPAY-04 | Xem lich su thanh toan | KH | 2
+SPAY-05 | Xac nhan thu tien dich vu (tien mat) | CV, AD | 1
+SPAY-06 | Hoan tien dich vu khi huy | HT, AD | 2
+RVW-01 | Danh gia va nhan xet chuyen vien | KH | 1
+RVW-02 | Xem danh gia chuyen vien | KH | 1
+RVW-03 | Kiem duyet rating chuyen vien | AD | 2
+
+IV. TRO LY AI
+AI-01 | Mo Chat AI | KH | 1
+AI-02 | Hoi dap cham soc (dinh duong, grooming, hanh vi) | KH | 1
+AI-03 | Hoi ve trieu chung (guardrail, khong ke thuoc) | KH | 1
+AI-04 | AI phan tich thong tin thu cung | KH | 3
+AI-05 | AI goi y dich vu va dat lich chuyen vien | KH | 1
+AI-06 | Xem lich su hoi thoai AI | KH | 3
+
+V. BENH LY VA DON THUOC
+MED-01 | Xem ho so benh ly thu cung | BS | 1
+MED-02 | Tao ho so kham / cham soc | BS | 1
+MED-03 | Ghi nhan tinh trang benh ly | BS | 1
+MED-04 | Ke don thuoc (tu danh muc Shop, muc do benh, cho phep mua lai) | BS | 1
+MED-05 | Cap nhat don thuoc (phien ban moi) | BS | 2
+MED-06 | Xem lich su don thuoc | BS, KH | 2
+MED-07 | Kiem tra dieu kien mua thuoc theo don | HT | 1
+MED-08 | Mua lai don thuoc (benh nhe) | KH | 1
+MED-09 | De xuat nhap thuoc chua co trong Shop | BS -> AD | 2
+
+VI. CUA HANG, GIO HANG, DON HANG, KHUYEN MAI
+PRD-01 | Xem, tim kiem, loc san pham | KH | 1
+PRD-02 | Xem chi tiet san pham | KH | 1
+PRD-03 | Quan ly danh muc san pham | AD | 1
+PRD-04 | Them san pham (gom co yeu cau don) | AD | 1
+PRD-05 | Cap nhat san pham | AD | 1
+PRD-06 | Xoa / an san pham | AD | 2
+CRT-01 | Them san pham vao gio | KH | 1
+CRT-02 | Xem / sua / xoa gio hang | KH | 1
+ORD-01 | Dat hang (checkout) | KH | 1
+ORD-02 | Thanh toan don hang | KH | 1
+ORD-03 | Xem danh sach don hang | KH, AD | 1
+ORD-04 | Xem chi tiet don hang | KH, AD | 1
+ORD-05 | Xac nhan don hang | AD | 1
+ORD-06 | Cap nhat trang thai don hang | AD | 1
+ORD-07 | Huy don hang | KH, AD | 1
+ORD-08 | Xem lich su xu ly don hang | AD | 3
+PRV-01 | Danh gia va binh luan san pham | KH | 2
+PRV-02 | Xem binh luan san pham | KH | 2
+PRV-03 | Chinh sua binh luan | KH | 3
+PRV-04 | Xoa binh luan | KH | 3
+PRV-05 | Kiem duyet binh luan | AD | 3
+VCH-01 | Tao chuong trinh khuyen mai | AD | 3
+VCH-02 | Tao voucher (kem dieu kien) | AD | 2
+VCH-03 | Kiem tra hieu luc va ap dung voucher | KH, HT | 2
+VCH-04 | Theo doi hieu qua khuyen mai | AD | 3
+
+VII. TON KHO, NHA CUNG CAP, NHAP HANG
+INV-01 | Xem ton kho (theo lo, han su dung) | AD | 1
+INV-02 | Nhap kho tu don nhap | AD | 1
+INV-03 | Dieu chinh ton kho (kem ly do) | AD | 2
+INV-04 | Canh bao ton kho thap | HT | 1
+SUP-01 | Tao / khoa tai khoan Supplier | AD | 1
+SUP-02 | Quan ly ho so Supplier | AD, SUP | 3
+SUP-03 | Quan ly bang gia hang cung cap | SUP | 3
+PUR-01 | Tao don nhap hang (PO) | AD | 1
+PUR-02 | Supplier xac nhan / tu choi don nhap | SUP | 2
+PUR-03 | Supplier cap nhat trang thai giao hang | SUP | 2
+PUR-04 | Nhan hang va kiem tra | AD | 1
+PUR-05 | Tra hang loi cho Supplier | AD | 3
+PUR-06 | Theo doi cong no Supplier | AD | 3
+PUR-07 | Xem lich su don nhap | AD, SUP | 3
+
+VIII. NHAN NUOI
+ADP-01 | Dang tin thu cung can tim chu (chi TCH) | TCH | 2
+ADP-02 | Cap nhat tin nhan nuoi | TCH | 3
+ADP-03 | Xoa tin nhan nuoi | TCH | 3
+ADP-04 | Hau kiem va go tin nhan nuoi | AD | 3
+ADP-05 | Xem danh sach thu cung can nhan nuoi | KH | 2
+ADP-06 | Xem chi tiet thu cung can nhan nuoi | KH | 2
+ADP-07 | Dang ky nhan nuoi | KH | 2
+ADP-08 | Xem don dang ky nhan nuoi | TCH | 2
+ADP-09 | Duyet / tu choi don nhan nuoi | TCH | 2
+ADP-10 | Xac nhan ban giao thu cung | TCH, KH | 2
+ADP-11 | Tao ho so pet sau nhan nuoi | KH | 3
+ADP-12 | Len lich va nhac cham soc sau nhan nuoi | HT | 3
+ADP-13 | Theo doi tinh trang sau nhan nuoi | TCH | 3
+ADP-14 | Gui khao sat follow-up | HT | 3
+ADP-15 | Admin tao / khoa tai khoan Tram cuu ho | AD | 2
+
+IX. VAN CHUYEN, DOI TRA, KE TOAN, BAO CAO, THONG BAO
+DLV-01 | Tao yeu cau giao va phan cong don vi giao | AD | 3
+DLV-02 | Tao ma van don | AD | 3
+DLV-03 | Theo doi trang thai giao hang | KH, AD | 3
+DLV-04 | Cap nhat trang thai giao hang | AD | 3
+DLV-05 | Xu ly giao hang that bai | AD | 3
+DLV-06 | Xac nhan giao hang thanh cong | KH, AD | 3
+RTN-01 | Gui yeu cau doi tra | KH | 3
+RTN-02 | Xem yeu cau doi tra | KH, AD | 3
+RTN-03 | Duyet / tu choi doi tra | AD | 3
+RTN-04 | Xu ly hang hoan tra | AD | 3
+RTN-05 | Xac nhan hoan tien | AD | 3
+RTN-06 | Theo doi trang thai hoan tien | KH | 3
+ACT-01 | Doi soat doanh thu dich vu | AD | 3
+ACT-02 | Doi soat doanh thu san pham | AD | 3
+ACT-03 | Doi soat thanh toan | AD | 3
+ACT-04 | Doi soat cong no don nhap | AD | 3
+ACT-05 | Doi soat phi giao hang | AD | 3
+ACT-06 | Tinh bang luong chuyen vien (luong cung + hoa hong + thuong) | HT, AD | 2
+ACT-07 | Duyet, chot bang luong, danh dau da chi tra | AD | 2
+ACT-08 | Cau hinh luong cung mac dinh, hoa hong, bac thuong | AD | 2
+ACT-09 | Chuyen vien xem bang luong cua minh | CV | 2
+RPT-01 | Dashboard co ban | AD | 2
+RPT-02 | Bao cao nang cao | AD | 3
+NTF-01 | Gui va xem thong bao | HT | 1
+
+TONG HOP
+Tang 1: 64 UC
+Tang 2: 33 UC
+Tang 3: 38 UC
+Tong: 135 UC
+
+6 UC da ha tu Tang 1 xuong Tang 2:
+ACC-09, PET-04, BKG-10, SPAY-03, PRD-06, INV-03
+
+BUSINESS RULES CHINH
+BR-MED-01 -> 14: Ke don, mua thuoc, mua lai, het luot chi nhac dat lich.
+BR-ACT-01 -> 07, 09: Luong.
+BR-PAY-01 -> 12: Thanh toan dich vu: tra truoc / sau, no-show, hoan tien, leo thang, ngoai le khan cap, cong bo chinh sach.
+BR-ADP-01: Chi Tram cuu ho do Admin cap tai khoan moi duoc dang tin nhan nuoi.
+BR-ADP-02: Admin co quyen go tin vi pham khi hau kiem hoac co bao cao.

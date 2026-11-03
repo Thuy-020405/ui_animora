@@ -1,0 +1,25 @@
+{
+  "nav": {
+    "home": "Trang chủ",
+    "about": "Về chúng tôi",
+    "services": "Dịch vụ",
+    "adoption": "Nhận nuôi",
+    "shop": "Cửa hàng",
+    "petProfiles": "Hồ sơ thú cưng",
+    "myBookings": "Lịch hẹn của tôi",
+    "myCart": "Giỏ hàng",
+    "login": "Đăng nhập",
+    "register": "Đăng ký"
+  },
+  "common": {
+    "bookNow": "Đặt lịch ngay",
+    "continue": "Tiếp tục",
+    "back": "Quay lại",
+    "cancel": "Hủy",
+    "save": "Lưu",
+    "delete": "Xóa",
+    "search": "Tìm kiếm...",
+    "loading": "Đang tải...",
+    "notFound": "Không tìm thấy trang"
+  }
+}

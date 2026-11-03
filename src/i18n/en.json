@@ -1,0 +1,25 @@
+{
+  "nav": {
+    "home": "Home",
+    "about": "About Us",
+    "services": "Services",
+    "adoption": "Adoption",
+    "shop": "Shop",
+    "petProfiles": "Pet Profiles",
+    "myBookings": "My Bookings",
+    "myCart": "Cart",
+    "login": "Log In",
+    "register": "Register"
+  },
+  "common": {
+    "bookNow": "Book Now",
+    "continue": "Continue",
+    "back": "Back",
+    "cancel": "Cancel",
+    "save": "Save",
+    "delete": "Delete",
+    "search": "Search...",
+    "loading": "Loading...",
+    "notFound": "Page Not Found"
+  }
+}

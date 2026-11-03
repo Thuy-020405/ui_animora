@@ -1,0 +1,6 @@
+{
+  "name": "Animora - Pet Care & Adoption",
+  "description": "Trung tâm chăm sóc và nhận nuôi thú cưng Animora với dịch vụ toàn diện, sổ sức khỏe định kỳ và cửa hàng cho bé cưng.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
